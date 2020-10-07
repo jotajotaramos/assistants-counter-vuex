@@ -7,8 +7,20 @@ export default new Vuex.Store({
 
     state:{
 
-        counter: 1
+        counter: 5
 
+    },
+    mutations:{
+        ADD_PERSON: function(state){
+
+            state.counter++;
+
+        },
+        DELETE_PERSON: function(state){
+
+            state.counter--;
+
+        },
     }
 
 })
