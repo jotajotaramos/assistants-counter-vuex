@@ -24,9 +24,11 @@ export default {
         addAssistant: function(){
             var randomNumber = Math.floor(Math.random() * 10001);
             this.peopleList.push(`Asistente${randomNumber}`);
+            this.$store.commit("ADD_PERSON");
         },
         deleteAssistant: function(){
             this.peopleList.splice(0,1);
+            this.$store.commit("DELETE_PERSON");
         }
     }
 
