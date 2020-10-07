@@ -7,7 +7,7 @@ export default new Vuex.Store({
 
     state:{
 
-        counter: 0
+        counter: 1
 
     }
 
